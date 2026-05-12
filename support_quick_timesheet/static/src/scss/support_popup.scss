@@ -1,0 +1,87 @@
+.o_support_popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1050;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+
+    &.o_collapsed {
+        height: 40px;
+        width: 200px;
+    }
+
+    &.o_hidden {
+        display: none !important;
+    }
+
+    &.o_in_pip {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        box-shadow: none !important;
+        border: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        background: white !important;
+        z-index: 999999 !important;
+    }
+
+    .o_support_header {
+        cursor: pointer;
+        user-select: none;
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+    }
+
+    .o_support_body {
+        flex: 1;
+        overflow-y: auto;
+        padding: 15px;
+        background: white !important;
+        min-height: 200px;
+    }
+
+    .o_support_content {
+        max-height: 400px;
+
+        .form-label {
+            margin-bottom: 0.2rem;
+            color: #666;
+        }
+
+        .o_support_slots {
+            .btn {
+                transition: transform 0.1s;
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+}
+
+.o_support_launcher {
+    cursor: pointer;
+    z-index: 1040;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

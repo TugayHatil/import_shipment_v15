@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_support_type_tree" model="ir.ui.view">
+        <field name="name">support.type.tree</field>
+        <field name="model">support.type</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="name"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_support_type" model="ir.actions.act_window">
+        <field name="name">Support Type</field>
+        <field name="res_model">support.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
