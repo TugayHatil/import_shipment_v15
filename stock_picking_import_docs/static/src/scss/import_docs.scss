@@ -1,15 +1,18 @@
 // Compact layout for the Import tab document sections
 .o_import_docs {
 
-    // attachment rows: slim single-line blocks
+    // attachment rows: slim single-line blocks, never widen the column
     .o_attachment.o_attachment_many2many {
         width: 100%;
+        max-width: 100%;
         padding: 1px 0;
+        overflow: hidden;
 
         .o_attachment_wrap {
             display: flex;
             align-items: center;
             padding: 2px 40px 2px 6px;
+            overflow: hidden;
         }
 
         .o_image_box {
@@ -26,6 +29,7 @@
         .caption {
             flex: 1 1 auto;
             min-width: 0;
+            overflow: hidden;
 
             &.small {
                 display: none;
@@ -42,25 +46,36 @@
         }
     }
 
-    // tighten group/field spacing inside the tab
+    // keep containers from growing with long file names
+    .oe_fileupload,
+    .o_attachments,
+    .o_field_widget {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .o_field_widget {
+        margin-bottom: 0 !important;
+    }
+
+    // let grid/flex columns shrink below content width
     .o_group {
         margin: 0;
     }
 
     .o_inner_group {
+        min-width: 0;
+        overflow: hidden;
         margin-bottom: 8px;
 
         > tbody > tr > td {
             padding: 0 0 2px 0;
+            overflow: hidden;
         }
     }
 
     .o_td_label {
         padding: 0 !important;
-    }
-
-    .o_field_widget {
-        margin-bottom: 0 !important;
     }
 
     .o_horizontal_separator {
