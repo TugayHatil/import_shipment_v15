@@ -1,12 +1,10 @@
 // Compact layout for the Import tab document sections
 .o_import_docs {
 
-    // attachment rows: slim single-line blocks, never widen the column
+    // attachment rows: slim single-line blocks
     .o_attachment.o_attachment_many2many {
         width: 100%;
-        max-width: 100%;
         padding: 1px 0;
-        overflow: hidden;
 
         .o_attachment_wrap {
             display: flex;
@@ -29,16 +27,21 @@
         .caption {
             flex: 1 1 auto;
             min-width: 0;
-            overflow: hidden;
+            position: relative;
+            height: 18px;
 
             &.small {
                 display: none;
             }
 
-            // truncate long filenames with ellipsis;
-            // the full name stays in the link tooltip (title attr)
+            // the link is taken out of the layout flow, so a long name
+            // can never widen the column; it truncates with ... and the
+            // full name stays in the link tooltip (title attr)
             a {
-                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
