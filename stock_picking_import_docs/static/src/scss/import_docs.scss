@@ -25,9 +25,19 @@
 
         .caption {
             flex: 1 1 auto;
+            min-width: 0;
 
             &.small {
                 display: none;
+            }
+
+            // truncate long filenames with ellipsis;
+            // the full name stays in the link tooltip (title attr)
+            a {
+                display: block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
         }
     }
