@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Stock Picking Import Documents',
-    'version': '15.0.1.0.0',
+    'version': '15.0.1.1.0',
     'category': 'Inventory',
     'summary': 'Attach and preview import documents (invoice, packing list, bill of lading) on transfers',
     'description': """
         Adds an "Import" tab on stock transfers where authorized users can
-        attach three import documents - import invoice, packing list and
-        bill of lading. Files are stored as record attachments, so they show
-        up as icons in the chatter and open in the standard full-screen
-        document viewer without downloading. The tab and the fields are
-        restricted to the "Import Documents Manager" group.
+        attach multiple files per document type - import invoice, packing
+        list, bill of lading and customs declaration. Files show up as
+        attachment icon blocks and open inline in a new tab for preview
+        without downloading. They also appear in the chatter attachments.
+        The tab and the fields are restricted to the "Import Documents
+        Manager" group.
     """,
     'author': 'Tugay Hatil',
     'website': 'https://github.com/TugayHatil',
@@ -22,7 +23,7 @@
     ],
     'assets': {
         'web.assets_backend': [
-            'stock_picking_import_docs/static/src/js/import_doc_preview.js',
+            'stock_picking_import_docs/static/src/js/import_docs_multi.js',
         ],
     },
     'installable': True,

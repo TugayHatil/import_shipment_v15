@@ -43,41 +43,25 @@ msgid "Import Documents Manager"
 msgstr "İthalat Dosyaları Yöneticisi"
 
 #. module: stock_picking_import_docs
-#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__import_invoice_file
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__import_invoice_attachment_ids
+#: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
 msgid "Import Invoice"
 msgstr "İthalat Faturası"
 
 #. module: stock_picking_import_docs
-#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__import_invoice_filename
-msgid "Import Invoice Filename"
-msgstr "İthalat Faturası Dosya Adı"
-
-#. module: stock_picking_import_docs
-#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__packing_list_file
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__packing_list_attachment_ids
+#: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
 msgid "Packing List"
 msgstr "Yükleme Listesi"
 
 #. module: stock_picking_import_docs
-#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__packing_list_filename
-msgid "Packing List Filename"
-msgstr "Yükleme Listesi Dosya Adı"
-
-#. module: stock_picking_import_docs
-#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__bill_of_lading_file
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__bill_of_lading_attachment_ids
+#: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
 msgid "Bill of Lading"
 msgstr "Konşimento"
 
 #. module: stock_picking_import_docs
-#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__bill_of_lading_filename
-msgid "Bill of Lading Filename"
-msgstr "Konşimento Dosya Adı"
-
-#. module: stock_picking_import_docs
-#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__customs_declaration_file
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__customs_declaration_attachment_ids
+#: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
 msgid "Customs Declaration"
 msgstr "Beyanname"
-
-#. module: stock_picking_import_docs
-#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__customs_declaration_filename
-msgid "Customs Declaration Filename"
-msgstr "Beyanname Dosya Adı"
