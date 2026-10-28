@@ -10,11 +10,14 @@
                       groups="stock_picking_import_docs.group_import_docs_manager">
                     <group name="import_docs_files">
                         <field name="import_invoice_filename" invisible="1"/>
-                        <field name="import_invoice_file" filename="import_invoice_filename"/>
+                        <field name="import_invoice_file" filename="import_invoice_filename"
+                               widget="import_doc_preview"/>
                         <field name="packing_list_filename" invisible="1"/>
-                        <field name="packing_list_file" filename="packing_list_filename"/>
+                        <field name="packing_list_file" filename="packing_list_filename"
+                               widget="import_doc_preview"/>
                         <field name="bill_of_lading_filename" invisible="1"/>
-                        <field name="bill_of_lading_file" filename="bill_of_lading_filename"/>
+                        <field name="bill_of_lading_file" filename="bill_of_lading_filename"
+                               widget="import_doc_preview"/>
                     </group>
                 </page>
             </xpath>

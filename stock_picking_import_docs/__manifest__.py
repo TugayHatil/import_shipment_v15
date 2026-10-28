@@ -20,6 +20,11 @@
         'security/res_groups.xml',
         'views/stock_picking_views.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            'stock_picking_import_docs/static/src/js/import_doc_preview.js',
+        ],
+    },
     'installable': True,
     'application': False,
     'auto_install': False,
