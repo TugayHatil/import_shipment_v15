@@ -25,7 +25,7 @@ odoo.define('stock_picking_import_docs.FieldImportDocsMulti', function (require)
             // upload without res_model/res_id so the attachments stay
             // unlinked and never show up in the chatter attachments list
             var $form = this.$('form.o_form_binary_form');
-            $form.attr('action', '/web/binary/upload');
+            $form.attr('action', '/stock_picking_import_docs/upload');
             $form.find('input[name="model"], input[name="id"]').remove();
         },
     });

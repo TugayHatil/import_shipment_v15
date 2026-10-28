@@ -5,4 +5,5 @@
 # This file is part of a proprietary Odoo addon.
 # Use of this file is governed by the LICENSE file included
 # in the root of this repository.
+from . import controllers
 from . import models

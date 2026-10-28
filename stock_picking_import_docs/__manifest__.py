@@ -7,7 +7,7 @@
 # in the root of this repository.
 {
     'name': 'Stock Picking: Import Documents',
-    'version': '15.0.1.5.0',
+    'version': '15.0.1.6.0',
     'category': 'Inventory',
     'summary': 'Import documents (invoice, packing list, bill of lading, customs declaration) on transfers',
     'author': 'Projet İş Çözümleri Ltd. Şti.',
