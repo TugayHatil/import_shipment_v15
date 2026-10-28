@@ -7,7 +7,7 @@
 # in the root of this repository.
 {
     'name': 'Stock Picking: Import Documents',
-    'version': '15.0.1.3.0',
+    'version': '15.0.1.4.0',
     'category': 'Inventory',
     'summary': 'Import documents (invoice, packing list, bill of lading, customs declaration) on transfers',
     'author': 'Projet İş Çözümleri Ltd. Şti.',
@@ -21,12 +21,10 @@
         'security/res_groups.xml',
         'views/stock_picking_views.xml',
     ],
-    'qweb': [
-        'stock_picking_import_docs/static/src/xml/import_docs.xml',
-    ],
     'assets': {
         'web.assets_backend': [
             'stock_picking_import_docs/static/src/scss/import_docs.scss',
+            'stock_picking_import_docs/static/src/xml/import_docs.xml',
             'stock_picking_import_docs/static/src/js/import_docs_multi.js',
         ],
     },
