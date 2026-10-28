@@ -19,6 +19,11 @@
         'security/res_groups.xml',
         'views/stock_picking_views.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            'stock_picking_import_docs/static/src/scss/pdf_viewer.scss',
+        ],
+    },
     'installable': True,
     'application': False,
     'auto_install': False,
