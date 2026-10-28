@@ -7,7 +7,7 @@
 # in the root of this repository.
 {
     'name': 'Stock Picking: Import Documents',
-    'version': '15.0.1.1.0',
+    'version': '15.0.1.2.0',
     'category': 'Inventory',
     'summary': 'Import documents (invoice, packing list, bill of lading, customs declaration) on transfers',
     'author': 'Projet İş Çözümleri Ltd. Şti.',
@@ -19,6 +19,7 @@
     ],
     'data': [
         'security/res_groups.xml',
+        'security/ir_rule.xml',
         'views/stock_picking_views.xml',
     ],
     'assets': {

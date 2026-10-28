@@ -65,3 +65,8 @@ msgstr "Konşimento"
 #: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
 msgid "Customs Declaration"
 msgstr "Beyanname"
+
+#. module: stock_picking_import_docs
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_ir_attachment__import_doc
+msgid "Import Doc"
+msgstr "İthalat Belgesi"
