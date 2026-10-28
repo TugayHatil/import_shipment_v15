@@ -23,6 +23,7 @@
     ],
     'assets': {
         'web.assets_backend': [
+            'stock_picking_import_docs/static/src/scss/import_docs.scss',
             'stock_picking_import_docs/static/src/js/import_docs_multi.js',
         ],
     },

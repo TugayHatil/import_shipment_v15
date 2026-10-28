@@ -12,8 +12,6 @@ odoo.define('stock_picking_import_docs.FieldImportDocsMulti', function (require)
      * instead of downloading it.
      */
     var FieldImportDocsMulti = FieldMany2ManyBinaryMultiFiles.extend({
-        accepted_file_extensions: 'application/pdf',
-
         /**
          * Serve files inline so the browser previews them.
          *

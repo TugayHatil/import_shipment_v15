@@ -1,0 +1,32 @@
+// Compact, single-line attachment rows for the Import tab
+.o_import_docs {
+    .o_attachment.o_attachment_many2many {
+        width: 100%;
+        padding: 2px 0;
+
+        .o_attachment_wrap {
+            display: flex;
+            align-items: center;
+            padding: 3px 40px 3px 6px;
+        }
+
+        .o_image_box {
+            float: none;
+            flex: 0 0 auto;
+            margin-right: 8px;
+        }
+
+        .o_image {
+            width: 20px;
+            height: 20px;
+        }
+
+        .caption {
+            flex: 1 1 auto;
+
+            &.small {
+                display: none;
+            }
+        }
+    }
+}
