@@ -1,0 +1,76 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_picking_import_docs
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-28 00:00+0000\n"
+"PO-Revision-Date: 2026-10-28 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: tr\n"
+
+#. module: stock_picking_import_docs
+#: model:ir.module,name:stock_picking_import_docs.module_metadata
+msgid "Stock Picking Import Documents"
+msgstr "Transfer İthalat Belgeleri"
+
+#. module: stock_picking_import_docs
+#: model:ir.module,summary:stock_picking_import_docs.module_metadata
+msgid "Attach and preview import documents (invoice, packing list, bill of lading) on transfers"
+msgstr "Transferlere ithalat belgeleri (fatura, yükleme listesi, konşimento) ekleme ve önizleme"
+
+#. module: stock_picking_import_docs
+#: model:ir.module.category,name:stock_picking_import_docs.module_category_import_docs
+#: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
+msgid "Import"
+msgstr "İthalat"
+
+#. module: stock_picking_import_docs
+#: model:ir.module.category,description:stock_picking_import_docs.module_category_import_docs
+msgid "Import documents management."
+msgstr "İthalat belgeleri yönetimi."
+
+#. module: stock_picking_import_docs
+#: model:res.groups,name:stock_picking_import_docs.group_import_docs_manager
+msgid "Import Documents Manager"
+msgstr "İthalat Dosyaları Yöneticisi"
+
+#. module: stock_picking_import_docs
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__import_invoice_file
+#: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
+msgid "Import Invoice"
+msgstr "İthalat Faturası"
+
+#. module: stock_picking_import_docs
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__import_invoice_filename
+msgid "Import Invoice Filename"
+msgstr "İthalat Faturası Dosya Adı"
+
+#. module: stock_picking_import_docs
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__packing_list_file
+#: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
+msgid "Packing List"
+msgstr "Yükleme Listesi"
+
+#. module: stock_picking_import_docs
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__packing_list_filename
+msgid "Packing List Filename"
+msgstr "Yükleme Listesi Dosya Adı"
+
+#. module: stock_picking_import_docs
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__bill_of_lading_file
+#: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
+msgid "Bill of Lading"
+msgstr "Konşimento"
+
+#. module: stock_picking_import_docs
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__bill_of_lading_filename
+msgid "Bill of Lading Filename"
+msgstr "Konşimento Dosya Adı"
