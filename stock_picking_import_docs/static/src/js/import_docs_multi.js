@@ -7,10 +7,6 @@ odoo.define('stock_picking_import_docs.FieldImportDocsMulti', function (require)
         relationalFields.FieldMany2ManyBinaryMultiFiles;
 
     var FieldImportDocsMulti = FieldMany2ManyBinaryMultiFiles.extend({
-        // uploads go to /web/binary/upload so the attachments stay
-        // unlinked and never show up in the chatter attachments list
-        template: 'ImportDocsFileUploader',
-
         /**
          * Serve files inline so the browser previews them in a new tab.
          *
@@ -26,6 +22,11 @@ odoo.define('stock_picking_import_docs.FieldImportDocsMulti', function (require)
         _render: function () {
             this._super.apply(this, arguments);
             this.$('.o_attachment a[href]').attr('target', '_blank');
+            // upload without res_model/res_id so the attachments stay
+            // unlinked and never show up in the chatter attachments list
+            var $form = this.$('form.o_form_binary_form');
+            $form.attr('action', '/web/binary/upload');
+            $form.find('input[name="model"], input[name="id"]').remove();
         },
     });
 
