@@ -1,7 +1,8 @@
-// Compact layout for the Import tab document sections
+// Import tab: single-line attachment rows, fixed column widths.
+// Filenames are taken out of the flow so a long name can never
+// stretch the column; it truncates and stays in the link tooltip.
 .o_import_docs {
 
-    // attachment rows: slim single-line blocks
     .o_attachment.o_attachment_many2many {
         width: 100%;
         padding: 1px 0;
@@ -34,9 +35,6 @@
                 display: none;
             }
 
-            // the link is taken out of the layout flow, so a long name
-            // can never widen the column; it truncates with ... and the
-            // full name stays in the link tooltip (title attr)
             a {
                 position: absolute;
                 top: 0;
@@ -49,7 +47,6 @@
         }
     }
 
-    // keep containers from growing with long file names
     .oe_fileupload,
     .o_attachments,
     .o_field_widget {
@@ -61,7 +58,6 @@
         margin-bottom: 0 !important;
     }
 
-    // let grid/flex columns shrink below content width
     .o_group {
         margin: 0;
     }

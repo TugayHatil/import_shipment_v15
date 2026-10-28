@@ -18,13 +18,13 @@ msgstr ""
 
 #. module: stock_picking_import_docs
 #: model:ir.module,name:stock_picking_import_docs.module_metadata
-msgid "Stock Picking Import Documents"
-msgstr "Transfer İthalat Belgeleri"
+msgid "Stock Picking: Import Documents"
+msgstr "Transferler: İthalat Belgeleri"
 
 #. module: stock_picking_import_docs
 #: model:ir.module,summary:stock_picking_import_docs.module_metadata
-msgid "Attach and preview import documents (invoice, packing list, bill of lading) on transfers"
-msgstr "Transferlere ithalat belgeleri (fatura, yükleme listesi, konşimento) ekleme ve önizleme"
+msgid "Import documents (invoice, packing list, bill of lading, customs declaration) on transfers"
+msgstr "Transferlerde ithalat belgeleri (fatura, yükleme listesi, konşimento, beyanname)"
 
 #. module: stock_picking_import_docs
 #: model:ir.module.category,name:stock_picking_import_docs.module_category_import_docs

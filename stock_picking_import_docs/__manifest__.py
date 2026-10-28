@@ -1,22 +1,22 @@
-# -*- coding: utf-8 -*-
+# SPDX-License-Identifier: LicenseRef-Projet-Proprietary
+#
+# Copyright (c) 2026 Projet İş Çözümleri Limited Şirketi
+#
+# This file is part of a proprietary Odoo addon.
+# Use of this file is governed by the LICENSE file included
+# in the root of this repository.
 {
-    'name': 'Stock Picking Import Documents',
+    'name': 'Stock Picking: Import Documents',
     'version': '15.0.1.1.0',
     'category': 'Inventory',
-    'summary': 'Attach and preview import documents (invoice, packing list, bill of lading) on transfers',
-    'description': """
-        Adds an "Import" tab on stock transfers where authorized users can
-        attach multiple files per document type - import invoice, packing
-        list, bill of lading and customs declaration. Files show up as
-        attachment icon blocks and open inline in a new tab for preview
-        without downloading. They also appear in the chatter attachments.
-        The tab and the fields are restricted to the "Import Documents
-        Manager" group.
-    """,
-    'author': 'Tugay Hatil',
-    'website': 'https://github.com/TugayHatil',
-    'license': 'LGPL-3',
-    'depends': ['stock'],
+    'summary': 'Import documents (invoice, packing list, bill of lading, customs declaration) on transfers',
+    'author': 'Projet İş Çözümleri Ltd. Şti.',
+    'website': 'https://projet.solutions',
+    'license': 'Other proprietary',
+    'maintainer': 'Projet İş Çözümleri Ltd. Şti.',
+    'depends': [
+        'stock',
+    ],
     'data': [
         'security/res_groups.xml',
         'views/stock_picking_views.xml',

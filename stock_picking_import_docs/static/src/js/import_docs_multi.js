@@ -6,14 +6,9 @@ odoo.define('stock_picking_import_docs.FieldImportDocsMulti', function (require)
     var FieldMany2ManyBinaryMultiFiles =
         relationalFields.FieldMany2ManyBinaryMultiFiles;
 
-    /**
-     * Multi file upload widget rendering attachment icon blocks.
-     * Clicking a file opens it inline in a new tab (browser preview)
-     * instead of downloading it.
-     */
     var FieldImportDocsMulti = FieldMany2ManyBinaryMultiFiles.extend({
         /**
-         * Serve files inline so the browser previews them.
+         * Serve files inline so the browser previews them in a new tab.
          *
          * @override
          */
@@ -22,8 +17,6 @@ odoo.define('stock_picking_import_docs.FieldImportDocsMulti', function (require)
         },
 
         /**
-         * Open previews in a new tab so the form isn't left.
-         *
          * @override
          */
         _render: function () {
