@@ -10,6 +10,8 @@ import json
 import logging
 import unicodedata
 
+from werkzeug.exceptions import Forbidden
+
 from odoo import _, http
 from odoo.exceptions import AccessError
 from odoo.http import request
@@ -26,7 +28,7 @@ class ImportDocsBinary(http.Controller):
         of /web/binary/upload_attachment."""
         if not request.env.user.has_group(
                 'stock_picking_import_docs.group_import_docs_manager'):
-            raise AccessError(_("You are not allowed to upload import documents."))
+            raise Forbidden(_("You are not allowed to upload import documents."))
         files = request.httprequest.files.getlist('ufile')
         Attachment = request.env['ir.attachment']
         out = """<script language="javascript" type="text/javascript">
