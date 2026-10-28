@@ -8,22 +8,13 @@
             <xpath expr="//notebook/page[last()]" position="after">
                 <page name="import_docs" string="Import"
                       groups="stock_picking_import_docs.group_import_docs_manager">
-                    <group col="6" name="import_docs_row" class="o_import_docs_row">
-                        <group string="Import Invoice" name="import_invoice_group">
-                            <field name="import_invoice_filename" invisible="1"/>
-                            <field name="import_invoice_file" nolabel="1"
-                                   filename="import_invoice_filename" widget="pdf_viewer"/>
-                        </group>
-                        <group string="Packing List" name="packing_list_group">
-                            <field name="packing_list_filename" invisible="1"/>
-                            <field name="packing_list_file" nolabel="1"
-                                   filename="packing_list_filename" widget="pdf_viewer"/>
-                        </group>
-                        <group string="Bill of Lading" name="bill_of_lading_group">
-                            <field name="bill_of_lading_filename" invisible="1"/>
-                            <field name="bill_of_lading_file" nolabel="1"
-                                   filename="bill_of_lading_filename" widget="pdf_viewer"/>
-                        </group>
+                    <group name="import_docs_files">
+                        <field name="import_invoice_filename" invisible="1"/>
+                        <field name="import_invoice_file" filename="import_invoice_filename"/>
+                        <field name="packing_list_filename" invisible="1"/>
+                        <field name="packing_list_file" filename="packing_list_filename"/>
+                        <field name="bill_of_lading_filename" invisible="1"/>
+                        <field name="bill_of_lading_file" filename="bill_of_lading_filename"/>
                     </group>
                 </page>
             </xpath>

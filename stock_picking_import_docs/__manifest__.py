@@ -7,9 +7,10 @@
     'description': """
         Adds an "Import" tab on stock transfers where authorized users can
         attach three import documents - import invoice, packing list and
-        bill of lading - and preview the PDF files directly in the form
-        without downloading them. The tab and the fields are restricted
-        to the "Import Documents Manager" group.
+        bill of lading. Files are stored as record attachments, so they show
+        up as icons in the chatter and open in the standard full-screen
+        document viewer without downloading. The tab and the fields are
+        restricted to the "Import Documents Manager" group.
     """,
     'author': 'Tugay Hatil',
     'website': 'https://github.com/TugayHatil',
@@ -19,11 +20,6 @@
         'security/res_groups.xml',
         'views/stock_picking_views.xml',
     ],
-    'assets': {
-        'web.assets_backend': [
-            'stock_picking_import_docs/static/src/scss/pdf_viewer.scss',
-        ],
-    },
     'installable': True,
     'application': False,
     'auto_install': False,

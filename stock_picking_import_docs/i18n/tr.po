@@ -44,7 +44,6 @@ msgstr "İthalat Dosyaları Yöneticisi"
 
 #. module: stock_picking_import_docs
 #: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__import_invoice_file
-#: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
 msgid "Import Invoice"
 msgstr "İthalat Faturası"
 
@@ -55,7 +54,6 @@ msgstr "İthalat Faturası Dosya Adı"
 
 #. module: stock_picking_import_docs
 #: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__packing_list_file
-#: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
 msgid "Packing List"
 msgstr "Yükleme Listesi"
 
@@ -66,7 +64,6 @@ msgstr "Yükleme Listesi Dosya Adı"
 
 #. module: stock_picking_import_docs
 #: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__bill_of_lading_file
-#: model_terms:ir.ui.view,arch_db:stock_picking_import_docs.view_picking_form_import_docs
 msgid "Bill of Lading"
 msgstr "Konşimento"
 
