@@ -18,6 +18,9 @@
                         <field name="bill_of_lading_filename" invisible="1"/>
                         <field name="bill_of_lading_file" filename="bill_of_lading_filename"
                                widget="import_doc_preview"/>
+                        <field name="customs_declaration_filename" invisible="1"/>
+                        <field name="customs_declaration_file" filename="customs_declaration_filename"
+                               widget="import_doc_preview"/>
                     </group>
                 </page>
             </xpath>

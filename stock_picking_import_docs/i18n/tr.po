@@ -71,3 +71,13 @@ msgstr "Konşimento"
 #: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__bill_of_lading_filename
 msgid "Bill of Lading Filename"
 msgstr "Konşimento Dosya Adı"
+
+#. module: stock_picking_import_docs
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__customs_declaration_file
+msgid "Customs Declaration"
+msgstr "Beyanname"
+
+#. module: stock_picking_import_docs
+#: model:ir.model.fields,field_description:stock_picking_import_docs.field_stock_picking__customs_declaration_filename
+msgid "Customs Declaration Filename"
+msgstr "Beyanname Dosya Adı"

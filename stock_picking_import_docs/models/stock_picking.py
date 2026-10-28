@@ -34,3 +34,12 @@ class StockPicking(models.Model):
         string='Bill of Lading Filename',
         groups=IMPORT_DOCS_GROUP,
     )
+    customs_declaration_file = fields.Binary(
+        string='Customs Declaration',
+        attachment=True,
+        groups=IMPORT_DOCS_GROUP,
+    )
+    customs_declaration_filename = fields.Char(
+        string='Customs Declaration Filename',
+        groups=IMPORT_DOCS_GROUP,
+    )
