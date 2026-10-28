@@ -7,6 +7,10 @@ odoo.define('stock_picking_import_docs.FieldImportDocsMulti', function (require)
         relationalFields.FieldMany2ManyBinaryMultiFiles;
 
     var FieldImportDocsMulti = FieldMany2ManyBinaryMultiFiles.extend({
+        // uploads go to /web/binary/upload so the attachments stay
+        // unlinked and never show up in the chatter attachments list
+        template: 'ImportDocsFileUploader',
+
         /**
          * Serve files inline so the browser previews them in a new tab.
          *

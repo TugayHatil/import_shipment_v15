@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="ImportDocsFileUploader">
+        <div t-attf-class="oe_fileupload #{widget.attrs.class ? widget.attrs.class :''}" aria-atomic="true">
+            <div class="oe_placeholder_files"/>
+            <div t-if="widget.mode !== 'readonly'" class="oe_add">
+                <button class="btn btn-secondary o_attach" title="Attach"><span class="fa fa-paperclip" aria-label="Attach"/> <t t-esc="widget.string"/></button>
+                <t t-call="HiddenInputFile">
+                    <t t-set="fileupload_id" t-value="widget.fileupload_id"/>
+                    <t t-set="fileupload_action" t-translation="off">/web/binary/upload</t>
+                    <t t-set="multi_upload" t-value="true"/>
+                </t>
+            </div>
+        </div>
+    </t>
+</templates>
